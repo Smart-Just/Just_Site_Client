@@ -5,7 +5,9 @@ import Menu from "../components/layout/Menu";
 const DefaultLayout =  () => {
   return <React.Fragment>
     <Menu />
-    <Outlet />
+    <div className={"defaultWarp"}>
+      <Outlet />
+    </div>
   </React.Fragment>
 }
 

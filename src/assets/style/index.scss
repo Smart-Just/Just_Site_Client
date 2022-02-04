@@ -26,3 +26,8 @@ a{
   text-decoration: none;
   color: #333;
 }
+
+.defaultWarp{
+  width: calc(100% - 101px);
+  margin-left: 101px;
+}
