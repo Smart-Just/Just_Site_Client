@@ -1,13 +1,12 @@
 import React from "react";
-import {postApi} from "../../util/ApiCallTest";
-import {signup} from "../../util/dummydata/auth";
+import TopContent from "../../components/home/TopContent";
 const Home =  () => {
-  const handleCallApi = () => {
-    postApi("/api/user", signup).then((doc)=> console.log(doc))
-  }
+
   return <React.Fragment>
-    <p> Home </p>
-    <button onClick={handleCallApi}> apiCallTest </button>
+    <div className={"dash-TopBox"}>
+      <TopContent title={"현재 동아리 인원"} number={10} countType={"명"} />
+      <TopContent title={"여태 동아리 인원"} number={50} countType={"명"} />
+    </div>
   </React.Fragment>
 }
 

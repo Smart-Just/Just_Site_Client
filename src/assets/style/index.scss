@@ -3,12 +3,21 @@
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
-@import "./layout/menu";
+@import "layout/menu";
+
+@import "components/TopContet";
+
+@import "components/shape/RoundCardBox";
+@import "components/shape/CountText";
 
 html, body{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
   font-family: 'Noto Sans KR', 'Roboto', sans-serif;
   margin: 0;
   padding: 0;
+  background-color: #f9f9f9;
 }
 
 ul,ol,li{
@@ -28,6 +37,19 @@ a{
 }
 
 .defaultWarp{
-  width: calc(100% - 101px);
-  margin-left: 101px;
+  overflow-y: scroll;
+}
+@media screen and (min-width: 769px) {
+  .defaultWarp{
+    width: calc(100% - 101px);
+    height: 100vh;
+    margin-left: 101px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .defaultWarp{
+    height: calc(100vh - 80px);
+    padding-top: 80px;
+    width: 100%;
+  }
 }

@@ -1,0 +1,15 @@
+.dash-TopBox{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  >div{
+    flex: 1;
+    min-width: 200px;
+    >p{
+      text-align: center;
+      padding:10px;
+      font-weight: bold;
+      color: #536efe;
+    }
+  }
+}
