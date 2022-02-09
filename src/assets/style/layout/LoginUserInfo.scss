@@ -9,6 +9,8 @@
   }
   .loginTrue{
     margin-top: 10px;
+    transform: scale(.8);
+    transition: .5s;
     >a{
       display: flex;
       font-size: 10pt;
@@ -22,6 +24,9 @@
         height: 50px;
         border-radius: 30px;
       }
+    }
+    &:hover{
+      transform: scale(.9);
     }
   }
 

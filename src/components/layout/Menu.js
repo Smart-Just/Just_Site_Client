@@ -1,7 +1,7 @@
 import {Link, NavLink} from "react-router-dom";
 import {Users, Briefcase, Edit3, Activity, AlignJustify} from "react-feather";
 import {useEffect, useState} from "react";
-import LoginUserInfo from "./LoginUserInfo";
+import Profile from "./Profile";
 
 const Menu = () => {
   const mNavData = (state, l1, l2, l3, l4, l5) => {
@@ -92,7 +92,7 @@ const Menu = () => {
         </ul>
       </li>
     </ul>
-    <LoginUserInfo/>
+    <Profile/>
   </nav>
 }
 
