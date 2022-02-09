@@ -1,0 +1,28 @@
+.loginUser{
+  position: absolute;
+  top: 0;
+  right: 20px;
+
+  .loginFalse{
+    line-height: 80px;
+    font-size: 10pt;
+  }
+  .loginTrue{
+    margin-top: 10px;
+    >a{
+      display: flex;
+      font-size: 10pt;
+      >div{
+        padding: 10px;
+      }
+      > img{
+        margin-top: 5px;
+        float: left;
+        width: 50px;
+        height: 50px;
+        border-radius: 30px;
+      }
+    }
+  }
+
+}
