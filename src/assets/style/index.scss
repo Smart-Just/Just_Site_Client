@@ -4,6 +4,7 @@
 // font-family: 'Roboto', sans-serif;
 
 @import "layout/menu";
+@import "layout/LoginUserInfo";
 
 @import "components/TopContet";
 
@@ -39,17 +40,9 @@ a{
 .defaultWarp{
   overflow-y: scroll;
 }
-@media screen and (min-width: 769px) {
-  .defaultWarp{
-    width: calc(100% - 101px);
-    height: 100vh;
-    margin-left: 101px;
-  }
-}
-@media screen and (max-width: 768px) {
-  .defaultWarp{
-    height: calc(100vh - 80px);
-    padding-top: 80px;
-    width: 100%;
-  }
+
+.defaultWarp{
+  height: calc(100vh - 80px);
+  padding-top: 80px;
+  width: 100%;
 }

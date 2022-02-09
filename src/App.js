@@ -14,7 +14,35 @@ function App() {
       path:"/",
       element: <DefaultLayout />,
       children : [
-        {index : true , element:<Home />}
+        {index : true , element:<Home />},
+        {
+          path : "intro",
+          element: <Home />,
+          children: [
+            {index : true , element:<Home />},
+          ]
+        },
+        {
+          path : "company",
+          element: <Home />,
+          children: [
+            {index : true , element:<Home />},
+          ]
+        },
+        {
+          path : "talk",
+          element: <Home />,
+          children: [
+            {index : true , element:<Home />},
+          ]
+        },
+        {
+          path : "activity",
+          element: <Home />,
+          children: [
+            {index : true , element:<Home />},
+          ]
+        },
       ]
     }
   ])
