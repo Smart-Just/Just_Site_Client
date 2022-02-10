@@ -3,7 +3,7 @@ import {Link} from "react-router-dom";
 
 const Profile = () => {
 
-  const [loginState, setLoginState] = useState(true)
+  const [loginState, setLoginState] = useState(false)
   const authData = {
     uid: 1,
     stuNumber: "202062010",
@@ -19,7 +19,7 @@ const Profile = () => {
 
 const LoginFalse = () => {
   return <div className={"loginFalse"}>
-    <Link to={"auth/login"}>로그인</Link>
+    <Link to={"auth/signin"}>로그인</Link>
   </div>
 }
 

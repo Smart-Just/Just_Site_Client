@@ -2,6 +2,10 @@ import {useRoutes} from "react-router-dom";
 import DefaultLayout from "./layout/DefaultLayout";
 import Home from "./pages/default/Home";
 import {useEffect} from "react";
+import AuthLayout from "./layout/AuthLayout";
+import Signin from "./pages/auth/Signin";
+import Signup from "./pages/auth/Signup";
+import _404 from "./pages/error/_404";
 function App() {
   useEffect(()=>{
     if(navigator.userAgent.toUpperCase().indexOf("CHROME") === -1){
@@ -44,7 +48,16 @@ function App() {
           ]
         },
       ]
-    }
+    },
+    {
+      path : "auth",
+      element : <AuthLayout />,
+      children: [
+        {path: "signin", element: <Signin />},
+        {path: "signup", element: <Signup />}
+      ]
+    },
+    {path:"*", element: <_404 />}
   ])
 }
 
