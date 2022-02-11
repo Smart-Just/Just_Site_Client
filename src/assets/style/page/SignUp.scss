@@ -1,0 +1,8 @@
+.signupWrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  animation: BottomToTop20to0Opacity 2s forwards;
+  opacity: 0;
+  transition: .5s;
+}

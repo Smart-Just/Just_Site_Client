@@ -1,0 +1,37 @@
+.authBackground{
+  position: fixed;
+  width: 100vw;
+  height: 100vh;
+  background:linear-gradient(90deg , rgba(86,145,200,.3), rgba(69,127,202,.2));
+  img{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40%;
+    opacity: .9;
+  }
+}
+.loginForm{
+  position: absolute;
+  left: 50%;
+  top : 50%;
+  transform: translate(-50%, -50%);
+  width: 500px;
+  padding: 10px;
+  height: 500px;
+  box-shadow: 0 5px 10px rgba(10,10,10,.3);
+  background-color: white;
+  overflow: hidden;
+  animation: Opacity0to1 1s forwards;
+  >img{
+    position: absolute;
+    right: 10px;
+    bottom: -60px;
+    width: 200px;
+    opacity: .1;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .loginForm{ width: 300px }
+}

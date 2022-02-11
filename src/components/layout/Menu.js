@@ -54,7 +54,7 @@ const Menu = () => {
       <div style={{width: menuWidth["line-2"]}}/>
       <div style={{width: menuWidth["line-1"]}}/>
     </div>
-    <Link to={"/"}> <img src={"image/logo.png"} width={"80px"}/> </Link>
+    <Link to={"/"}> <img src={"./image/logo.png"} width={"80px"}/> </Link>
     <ul className={"DefaultSideMenu"}>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Users/></div>
