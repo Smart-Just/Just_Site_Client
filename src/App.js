@@ -6,6 +6,7 @@ import AuthLayout from "./layout/AuthLayout";
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import _404 from "./pages/error/_404";
+
 function App() {
   useEffect(()=>{
     if(navigator.userAgent.toUpperCase().indexOf("CHROME") === -1){
@@ -59,6 +60,7 @@ function App() {
     },
     {path:"*", element: <_404 />}
   ])
+
 }
 
 export default App;

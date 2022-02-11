@@ -7,9 +7,10 @@
 @import "layout/LoginUserInfo";
 
 @import "components/TopContet";
-
 @import "components/shape/RoundCardBox";
 @import "components/shape/CountText";
+
+@import "page/Home";
 
 html, body{
   position: fixed;
@@ -45,8 +46,4 @@ a{
   height: calc(100vh - 80px);
   padding-top: 80px;
   width: 100%;
-}
-.welcome{
-  font-weight: lighter;
-  font-size: 20pt;
 }
