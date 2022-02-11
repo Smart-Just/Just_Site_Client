@@ -43,12 +43,13 @@ a{
   color: #333;
 }
 
-.defaultWarp{
-  overflow-y: scroll;
+#root{
+  width: 100vw;
+  height: 100vh;
 }
-
 .defaultWarp{
   height: calc(100vh - 80px);
   padding-top: 80px;
   width: 100%;
+  overflow-y: scroll;
 }

@@ -1,20 +1,28 @@
 .mainWrap{
-  position: absolute;
-  top: 50%;
-  transform: translateY(-50%);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  @media screen and (min-width: 801px) {
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+  }
+  @media screen and (max-width: 800px) {
+    margin : 0 0 180px;
+  }
+  width: 100vw;
+  max-width: 1024px;
+  min-width: 300px;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  width: 1024px;
-  margin: 0 auto;
   >div{
     flex: 1;
-    min-width: 512px;
-    max-width: 512px;
-  }
-  .welcome{
-    font-weight: lighter;
-    font-size: 20pt;
-    text-align: center;
+    min-width: 300px;
+    &.welcome{
+      margin: 100px 0;
+      font-weight: lighter;
+      font-size: 20pt;
+      text-align: center;
+    }
   }
 }

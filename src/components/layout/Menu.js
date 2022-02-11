@@ -23,7 +23,7 @@ const Menu = () => {
       setMenuHeight("80px")
     } else {
       setMenuWidth(mNavData(true, "25px", "10px", "20px", "15px", "23px"))
-      setMenuHeight("550px")
+      setMenuHeight("600px")
     }
   }
 
