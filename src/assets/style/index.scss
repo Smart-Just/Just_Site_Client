@@ -48,8 +48,22 @@ a{
   height: 100vh;
 }
 .defaultWarp{
+  position: fixed;
+  top: 80px;
   height: calc(100vh - 80px);
-  padding-top: 80px;
   width: 100%;
   overflow-y: scroll;
+  overflow-x: hidden;
+  -ms-overflow-style: none;
+  &::-webkit-scrollbar{
+    width: 5px;
+    padding: 0;
+    margin: 0;
+  }
+  &::-webkit-scrollbar-thumb{
+    background-color: #2f3542;
+    border-radius: 10px;
+    background-clip: padding-box;
+    border: 2px solid transparent;
+  };
 }
