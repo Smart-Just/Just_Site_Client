@@ -60,9 +60,9 @@ const Menu = () => {
         <div><Users/></div>
         <p><NavLink to={"/intro"}>스터디 소개</NavLink></p>
         <ul>
-          <li><Link to={"/intro"}> 목적 </Link></li>
-          <li><Link to={"/intro"}> 역대 활동 </Link></li>
-          <li><Link to={"/intro"}> 멤버 소개 </Link></li>
+          <li><NavLink to={"/intro"}> 목적 </NavLink></li>
+          <li><NavLink to={"/history"}> 역대 활동 </NavLink></li>
+          <li><NavLink to={"/member"}> 멤버 소개 </NavLink></li>
         </ul>
       </li>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

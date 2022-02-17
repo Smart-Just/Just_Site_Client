@@ -6,6 +6,7 @@ import AuthLayout from "./layout/AuthLayout";
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import _404 from "./pages/error/_404";
+import Intro from "./pages/default/Intro";
 
 function App() {
   useEffect(()=>{
@@ -22,9 +23,9 @@ function App() {
         {index : true , element:<Home />},
         {
           path : "intro",
-          element: <Home />,
+          element: <Intro />,
           children: [
-            {index : true , element:<Home />},
+            {index : true , element:<Intro />},
           ]
         },
         {

@@ -5,6 +5,7 @@ import App from './App';
 import reportWebVitals from './reportWebVitals';
 import "./assets/style/index.scss";
 
+
 ReactDOM.render(
   <React.StrictMode>
     <Router>

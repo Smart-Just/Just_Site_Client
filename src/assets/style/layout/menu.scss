@@ -84,6 +84,9 @@ nav{
           >a:hover{
             color: #222;
           }
+          >a.active{
+            color: #222;
+          }
         }
       }
       &:hover{

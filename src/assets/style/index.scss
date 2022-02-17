@@ -3,6 +3,9 @@
 // font-family: 'Noto Sans KR', sans-serif;
 // font-family: 'Roboto', sans-serif;
 
+@import "variable";
+@import "markdown";
+
 @import "layout/menu";
 @import "layout/LoginUserInfo";
 @import "layout/Auth";
@@ -34,8 +37,8 @@ ul,ol,li{
 }
 
 h1, h2, h3, h4, h5, p{
-  padding: 0;
-  margin: 0;
+  padding:0;
+  margin:0;
 }
 
 a{
@@ -67,3 +70,5 @@ a{
     border: 2px solid transparent;
   };
 }
+
+
