@@ -1,4 +1,4 @@
-![](image/logo.png)
+![](/image/logo.png)
 
 # 목적
 

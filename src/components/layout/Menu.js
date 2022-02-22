@@ -54,15 +54,15 @@ const Menu = () => {
       <div style={{width: menuWidth["line-2"]}}/>
       <div style={{width: menuWidth["line-1"]}}/>
     </div>
-    <Link to={"/"}> <img src={"./image/logo.png"} width={"80px"}/> </Link>
+    <Link to={"/"}> <img src={"/image/logo.png"} width={"80px"}/> </Link>
     <ul className={"DefaultSideMenu"}>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Users/></div>
-        <p><NavLink to={"/intro"}>스터디 소개</NavLink></p>
+        <p><NavLink to={"/info/intro"}>스터디 소개</NavLink></p>
         <ul>
-          <li><NavLink to={"/intro"}> 목적 </NavLink></li>
-          <li><NavLink to={"/history"}> 역대 활동 </NavLink></li>
-          <li><NavLink to={"/member"}> 멤버 소개 </NavLink></li>
+          <li><NavLink to={"/info/intro"}> 목적 </NavLink></li>
+          <li><NavLink to={"/info/event"}> 연간 행사 </NavLink></li>
+          <li><NavLink to={"/info/member"}> 멤버 소개 </NavLink></li>
         </ul>
       </li>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>

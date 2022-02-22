@@ -1,0 +1,41 @@
+.githubLink{
+  display: inline-block;
+  position: absolute;
+  width: 410px;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  background-color: white;
+  box-shadow: 0 5px 10px rgba(110,110,110,.09);
+  height: 80px;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: .5s;
+  img{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 50px;
+    margin: auto auto;
+    border-right: 1px solid #afafaf;
+    float: left;
+  }
+  >div{
+    display: inline-block;
+    padding: 10px 10px 10px 20px;
+    p{
+      &:nth-child(2){
+        font-weight: lighter;
+        font-size: 8pt;
+      }
+      &:nth-child(3){
+        margin-top: 5px;
+        font-size: 8pt;
+      }
+    }
+  }
+  &:hover{
+    transform: scale(1.02) translateX(-49%);
+    box-shadow: 0 10px 15px rgba(110,110,110,.3);
+  }
+}

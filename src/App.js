@@ -6,7 +6,9 @@ import AuthLayout from "./layout/AuthLayout";
 import Signin from "./pages/auth/Signin";
 import Signup from "./pages/auth/Signup";
 import _404 from "./pages/error/_404";
-import Intro from "./pages/default/Intro";
+import Intro from "./pages/default/info/Intro";
+import Event from "./pages/default/info/Event";
+import Member from "./pages/default/info/Member";
 
 function App() {
   useEffect(()=>{
@@ -22,10 +24,11 @@ function App() {
       children : [
         {index : true , element:<Home />},
         {
-          path : "intro",
-          element: <Intro />,
-          children: [
-            {index : true , element:<Intro />},
+          path : 'info',
+          children:[
+            {path : "intro", element: <Intro />},
+            {path : 'event', element: <Event />},
+            {path : 'member', element: <Member />},
           ]
         },
         {
