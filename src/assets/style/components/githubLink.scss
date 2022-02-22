@@ -11,6 +11,10 @@
   border-radius: 10px;
   cursor: pointer;
   transition: .5s;
+  @media screen and (max-width: 470px) {
+    width: 310px;
+    img{display: none}
+  }
   img{
     position: relative;
     top: 50%;
@@ -21,12 +25,18 @@
     float: left;
   }
   >div{
+    @media screen and (max-width: 470px) {
+      width: 275px;
+    }
     display: inline-block;
     padding: 10px 10px 10px 20px;
     p{
+      overflow:hidden;
       &:nth-child(2){
         font-weight: lighter;
         font-size: 8pt;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
       &:nth-child(3){
         margin-top: 5px;

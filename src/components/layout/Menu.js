@@ -58,37 +58,37 @@ const Menu = () => {
     <ul className={"DefaultSideMenu"}>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Users/></div>
-        <p><NavLink to={"/info/intro"}>스터디 소개</NavLink></p>
+        <p><NavLink to={"/info/intro"} onClick={handleMenuClick}>스터디 소개</NavLink></p>
         <ul>
-          <li><NavLink to={"/info/intro"}> 목적 </NavLink></li>
-          <li><NavLink to={"/info/event"}> 연간 행사 </NavLink></li>
-          <li><NavLink to={"/info/member"}> 멤버 소개 </NavLink></li>
+          <li><NavLink to={"/info/intro"} onClick={handleMenuClick}> 목적 </NavLink></li>
+          <li><NavLink to={"/info/event"} onClick={handleMenuClick}> 연간 행사 </NavLink></li>
+          <li><NavLink to={"/info/member"} onClick={handleMenuClick}> 멤버 소개 </NavLink></li>
         </ul>
       </li>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Briefcase/></div>
-        <p><NavLink to={"/company"}>기업 정보</NavLink></p>
+        <p><NavLink to={"/company"} onClick={handleMenuClick}>기업 정보</NavLink></p>
         <ul>
-          <li><Link to={"/company"}> IT 대기업 </Link></li>
-          <li><Link to={"/company"}> 중소 & 스타트업 </Link></li>
+          <li><Link to={"/company"} onClick={handleMenuClick}> IT 대기업 </Link></li>
+          <li><Link to={"/company"} onClick={handleMenuClick}> 중소 & 스타트업 </Link></li>
         </ul>
       </li>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Edit3/></div>
-        <p><NavLink to={"/talk"}>커뮤니티</NavLink></p>
+        <p><NavLink to={"/talk"} onClick={handleMenuClick}>커뮤니티</NavLink></p>
         <ul>
-          <li><Link to={"/talk"}> 정보공유 </Link></li>
-          <li><Link to={"/talk"}> 대회 팀원 모집 </Link></li>
-          <li><Link to={"/talk"}> Q&A </Link></li>
+          <li><Link to={"/talk"} onClick={handleMenuClick}> 정보공유 </Link></li>
+          <li><Link to={"/talk"} onClick={handleMenuClick}> 대회 팀원 모집 </Link></li>
+          <li><Link to={"/talk"} onClick={handleMenuClick}> Q&A </Link></li>
         </ul>
       </li>
       <li onMouseEnter={handleMouseEnter} onMouseLeave={handleMouseLeave}>
         <div><Activity/></div>
-        <p><NavLink to={"/activity"}>활동</NavLink></p>
+        <p><NavLink to={"/activity"} onClick={handleMenuClick}>활동</NavLink></p>
         <ul>
-          <li><Link to={"/activity"}> 진행 프로젝트 </Link></li>
-          <li><Link to={"/activity"}> 스터디 일정 </Link></li>
-          <li><Link to={"/activity"}> 취업 현황 </Link></li>
+          <li><Link to={"/activity"} onClick={handleMenuClick}> 진행 프로젝트 </Link></li>
+          <li><Link to={"/activity"} onClick={handleMenuClick}> 스터디 일정 </Link></li>
+          <li><Link to={"/activity"} onClick={handleMenuClick}> 취업 현황 </Link></li>
         </ul>
       </li>
     </ul>
