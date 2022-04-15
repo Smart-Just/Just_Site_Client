@@ -5,4 +5,38 @@
   animation: BottomToTop20to0Opacity 2s forwards;
   opacity: 0;
   transition: .5s;
+  >p{
+    position: relative;
+    top: 70px;
+    font-weight: normal;
+    color: #666;
+    text-align: center;
+    font-size: 15pt;
+    @media screen and (max-width: 500px) {
+      font-size: 12pt;
+    }
+    >b{
+      color: #333;
+    }
+  }
+  .signUpArea{
+    position: absolute;
+    bottom: 80px;
+    width: 100%;
+    >p{
+      font-size: 15pt;
+      font-weight: lighter;
+      text-align: center;
+      transition: .5s;
+      >a{
+        color: #536efe;
+        font-weight: bold;
+        cursor: pointer;
+      }
+      &:hover{
+        transform: scale(1.1);
+      }
+    }
+  }
+
 }

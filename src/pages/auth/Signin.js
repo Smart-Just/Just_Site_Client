@@ -15,9 +15,9 @@ const Signin = () => {
      },1000)
   }
   return<div ref={wrapRef} className={"signinWrap"}>
-    <ArrowLeft onClick={()=>naviage("/")}/>
+    <ArrowLeft className="ArrowLeft" onClick={()=>naviage("/")}/>
     <p><b>JUST</b> 동아리 페이지에 오신걸 환영합니다.</p>
-    <form className={"signinInput"} onSubmit={handleLogin}>
+    <form className={"authInput"} onSubmit={handleLogin}>
       <input type={"text"} placeholder={"학번"} />
       <input type={"password"} placeholder={"비밀번호"} />
       <input type={"submit"} value={"로그인"} />
